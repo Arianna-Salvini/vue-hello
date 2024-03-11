@@ -7,8 +7,8 @@ createApp({
         return{
             image: 'https://picsum.photos/id/2/200/300',
             fullName: 'Arianna Salvini',
-            description: 'Bollean student in full-stack web development',
+            description: 'Boolean student in Full-stack Web Development',
             classNumb: 'Classe 119',
         }
     }
-})
+}).mount('#app')
