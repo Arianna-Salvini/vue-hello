@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,22 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
+
 <body>
-    <h1 id="app"> {{message}} </h1>
+    <div id="app">
+        <!-- Add massage with Vue -->
+        <h1>{{message}}</h1>
+        <!-- Image from folder -->
+        <div>
+            <img v-bind:src="image" alt="" width="500">
+        </div>
+        <!-- Picture from lorem picsum with shorthand vertion of v-blind: -->
+        <div>
+            <img :src="imageHttp" alt="">
+        </div>
+    </div>
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
